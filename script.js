@@ -12,7 +12,6 @@ pizzaJson.map((item, index)=>{
     pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description;
     pizzaItem.querySelector('a').addEventListener('click',(e) =>{
         e.preventDefault();
-
         let key = e.target.closest('.pizza-item').getAttribute('data-key');
 
         q('.pizzaBig img').src = pizzaJson[key].img;
